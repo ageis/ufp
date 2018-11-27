@@ -2,6 +2,7 @@ class BaseFormatter():
     """
     Base representation of a formatter
     """
+
     def __init__(self, entries, options):
         self.entries = entries
         self.options = options
