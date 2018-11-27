@@ -1,0 +1,26 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "ufp"
+author = "Igor Vuk"
+author-email = "igor.vuk@nimium.hr"
+home-page = "https://github.com/ivuk/ufp"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Topic :: System :: Networking :: Firewalls",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Intended Audience :: System Administrators",
+    'Topic :: System :: Monitoring', 'Environment :: Console']
+description-file = "README.md"
+requires-python = ">=3.4"
+dist-name = "ufp"
+keywords = "ufw, firewall, parser, iptables, logs"
+requires = []
+dev-requires = [ "celery>=4.2.1", "node>=1.3.7", "pluggy>=0.8.0", "py>=1.7.0", "pycodestyle>=2.4.0", "pytest>=4.0.1", "ufw>=0.35"]

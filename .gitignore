@@ -1,37 +1,117 @@
-*.py[cod]
 
-# C extensions
-*.so
-
-# Packages
+*~
+bh_unicode_properties.cache
+bin
+build
+build/
+.cache
+celerybeat-schedule
+*.cover
+.coverage
+.coverage.*
+coverage.xml
+db.sqlite3
+develop-eggs
+develop-eggs/
+dist
+dist/
+.dmypy.json
+dmypy.json
+docs/_build/
+downloads/
 *.egg
 *.egg-info
-dist
-build
+*.egg-info/
 eggs
-parts
-bin
-var
-sdist
-develop-eggs
+.eggs/
+eggs/
+.env
+env/
+ENV/
+env.bak/
+GitHub.sublime-settings
+htmlcov/
+.hypothesis/
 .installed.cfg
+instance/
+.ipynb_checkpoints
+ipython_config.py
 lib
+lib/
 lib64
-__pycache__
-
-# Installer logs
-pip-log.txt
-
-# Unit test / coverage reports
-.coverage
-.tox
-.pytest_cache
-nosetests.xml
-
-# Translations
+lib64/
+local_settings.py
+*.log
+*.manifest
+MANIFEST
 *.mo
-
-# Mr Developer
 .mr.developer.cfg
+.mypy_cache/
+.netrwhist
+nosetests.xml
+.nox/
+oscrypto-ca-bundle.crt
+Package Control.ca-bundle
+Package Control.ca-certs/
+Package Control.cache/
+Package Control.ca-list
+Package Control.last-run
+Package Control.merged-ca-bundle
+Package Control.system-ca-bundle
+Package Control.user-ca-bundle
+parts
+parts/
+pip-delete-this-directory.txt
+pip-log.txt
+*.pot
+profile_default/
 .project
+__pycache__
+__pycache__/
+*$py.class
+*.py[cod]
 .pydevproject
+.pyre/
+.pytest_cache
+.pytest_cache/
+.Python
+.python-version
+.ropeproject
+*.sage.py
+[._]s[a-rt-v][a-z]
+[._]*.s[a-v][a-z]
+.scrapy
+sdist
+sdist/
+Session.vim
+sftp-config.json
+share/python-wheels/
+/site
+*.so
+*.spec
+.spyderproject
+.spyproject
+[._]ss[a-gi-z]
+*.stTheme.cache
+*.sublime-workspace
+[._]*.sw[a-p]
+[._]sw[a-p]
+tags
+target/
+*.tmlanguage.cache
+*.tmPreferences.cache
+.tox
+.tox/
+[._]*.un~
+var
+var/
+.venv
+venv/
+venv.bak/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+.webassets-cache
+wheels/

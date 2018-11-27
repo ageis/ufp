@@ -9,9 +9,10 @@ class ParsedLine():
     ACTION_BLOCK = 0
     ACTION_ALLOW = 1
 
-    _ip_protocol_table = {num: name[8:] for name, num in
-                          vars(socket).items() if
-                          name.startswith("IPPROTO")}
+    _ip_protocol_table = {
+        num: name[8:]
+        for name, num in vars(socket).items() if name.startswith("IPPROTO")
+    }
 
     def __init__(self, data):
         self.data = data

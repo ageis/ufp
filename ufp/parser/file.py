@@ -6,6 +6,7 @@ class FileParser(BaseParser):
     A parser which accepts a file-like object and allows iteration to
     retrieve ParsedLine instances.
     """
+
     def __init__(self, filelike):
         self.file = filelike
         super().__init__()
