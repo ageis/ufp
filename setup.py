@@ -107,9 +107,8 @@ class PyTest(Command):
         raise SystemExit(errno)
 
 
-package_data = find_package_data(where='src/ufp', package='ufp', only_in_packages=True, show_ignored=True)
+package_data = find_package_data(where='ufp', package='ufp', only_in_packages=True, show_ignored=True)
 packages = find_packages(where=here, exclude=standard_exclude_directories)
-
 
 setup(
     name="ufp",
@@ -143,15 +142,15 @@ setup(
         "Intended Audience :: System Administrators",
         'Topic :: System :: Monitoring', 'Environment :: Console'
     ],
-    #py_modules=packages,
+    py_modules=['ufp', 'ufp.cli', 'ufp.formatter', 'ufp.parser'],
     python_requires='>=3.0',
     extras_require={},
-    #package_data=package_data,
+    package_data=package_data,
     # data_files=data_files,
     platforms=['Linux'],
-    scripts=['src/ufp.py'],
+    #scripts=['src/ufp.py'],
     zip_safe=False,
-    entry_points={'console_scripts': ['ufp=ufp:main']},
+    entry_points={'console_scripts': ['ufp=ufp.cli:main']},
     install_requires=[],
     setup_requires=['pytest-runner'],
     tests_require=['pytest'],
